@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loading</title>
+  <style>
+
+    @keyframes load {
+      0% {
+        transform: rotate(0)
+      }
+
+      100% {
+        transform: rotate(-360deg)
+      }
+    }
+
+    .loading {
+      animation: load 1s linear infinite;
+      width: 20px;
+      height: 20px;
+      background: url('./loading.png') no-repeat;
+      background-size: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loading"></div>
+</body>
+
+</html>
